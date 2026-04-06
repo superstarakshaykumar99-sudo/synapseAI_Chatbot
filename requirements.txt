@@ -1,0 +1,31 @@
+# ─── Web Framework ──────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ─── AI Providers ───────────────────────────────────────────
+openai
+google-generativeai
+
+# ─── Embeddings & Vector Search ─────────────────────────────
+
+# ─── PDF Processing ─────────────────────────────────────────
+pymupdf
+
+# ─── Database ───────────────────────────────────────────────
+# sqlite3 is part of Python stdlib — no extra install needed
+
+# ─── WhatsApp / Twilio ──────────────────────────────────────
+twilio
+
+# ─── Frontend ───────────────────────────────────────────────
+streamlit
+requests
+
+# ─── Utilities ──────────────────────────────────────────────
+python-dotenv
+loguru
+numpy
+tiktoken
+httpx
+pydantic
