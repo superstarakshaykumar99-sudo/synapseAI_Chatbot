@@ -1,9 +1,10 @@
+import os
 import streamlit as st
 import requests
 import uuid
 
-# Configuration
-API_URL = "http://localhost:8000"
+# Configuration — reads BACKEND_URL env var (set on Streamlit Cloud)
+API_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 st.set_page_config(
     page_title="SynapseAI Chat",
@@ -208,8 +209,7 @@ with st.sidebar:
     st.divider()
     
     st.subheader("📄 Knowledge Base")
-    st.caption("Upload a PDF to chat with it")
-    uploaded_file = st.file_uploader("", type=["pdf"], label_visibility="collapsed")
+    uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
     
     if uploaded_file is not None:
         if st.button("⚡ Index PDF", use_container_width=True, key="process_pdf"):

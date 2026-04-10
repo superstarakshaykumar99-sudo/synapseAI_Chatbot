@@ -6,6 +6,7 @@ python-multipart
 # ─── AI Providers ───────────────────────────────────────────
 openai
 google-generativeai
+groq
 
 # ─── Embeddings & Vector Search ─────────────────────────────
 
