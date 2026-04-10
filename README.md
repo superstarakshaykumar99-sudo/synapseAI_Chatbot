@@ -2,6 +2,8 @@
 
 A production-ready AI chatbot platform built with FastAPI, Streamlit, and RAG capabilities (Retrieval-Augmented Generation).
 
+🚀 **Live Demo:** https://superstarakshaykumar99-sudo-synapseai-chat-streamlit-app-7wmnjj.streamlit.app/
+
 ## Features
 
 - **Multi-Model Support**: Easily switch between OpenAI (GPT-4o) and Google Gemini via `.env`.
